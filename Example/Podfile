@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+
+target 'NSObject-Serialize_Tests', :exclusive => true do
+  pod "NSObject-Serialize", :path => "../"
+
+  
+end
