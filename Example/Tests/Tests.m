@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 ipconfiger. All rights reserved.
 //
 
+#import "BLObj.h"
+#import "NSObject+Serializor.h"
+
 @import XCTest;
 
 @interface Tests : XCTestCase
@@ -26,9 +29,29 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testNSObjectToNSDictionary
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    BLObj *obj = [BLObj new];
+    obj.entityId = 5;
+    obj.name = @"test";
+    NSDictionary *dict = [obj fromNSObject];
+    if (!dict) {
+        XCTFail(@"serialize failt");
+    }
+}
+
+
+- (void)testNSDictionaryToNSObject
+{
+    BLObj *obj = [BLObj new];
+    [obj fromDictionary:@{@"entityId":@(5), @"name":@"test"}];
+    NSLog(@"%d", obj.entityId);
+    if (obj.entityId == 5){
+
+    }else{
+        XCTFail(@"No implement");
+    }
+
 }
 
 @end

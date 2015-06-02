@@ -12,6 +12,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		E26EEBDA1B1E132600A117B5 /* NSObject+Serializor.m in Sources */ = {isa = PBXBuildFile; fileRef = E26EEBD91B1E132600A117B5 /* NSObject+Serializor.m */; };
+		E26EEBDD1B1E13DB00A117B5 /* BLObj.m in Sources */ = {isa = PBXBuildFile; fileRef = E26EEBDC1B1E13DB00A117B5 /* BLObj.m */; };
 		F934CBCFE883B34E7FB3CD51 /* Pods_NSObject_Serialize_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28C8C58BABFAD3B97A2BAB /* Pods_NSObject_Serialize_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -20,7 +22,7 @@
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = "NSObject-Serialize_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* NSObject-Serialize_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSObject-Serialize_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -29,6 +31,10 @@
 		6D3E18EDADD42FB5180334EF /* Pods-NSObject-Serialize_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSObject-Serialize_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSObject-Serialize_Tests/Pods-NSObject-Serialize_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		81D75AE5E875D28B44CC6D13 /* Pods-NSObject-Serialize_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSObject-Serialize_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSObject-Serialize_Tests/Pods-NSObject-Serialize_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		944C64BEE6341EBA696C8D26 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E26EEBD81B1E132600A117B5 /* NSObject+Serializor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Serializor.h"; path = "BLSerializor/NSObject+Serializor.h"; sourceTree = "<group>"; };
+		E26EEBD91B1E132600A117B5 /* NSObject+Serializor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Serializor.m"; path = "BLSerializor/NSObject+Serializor.m"; sourceTree = "<group>"; };
+		E26EEBDB1B1E13DB00A117B5 /* BLObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLObj.h; sourceTree = "<group>"; };
+		E26EEBDC1B1E13DB00A117B5 /* BLObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLObj.m; sourceTree = "<group>"; };
 		EF45B364F313688A7BE3A3B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F625958F3A366232322A4195 /* NSObject-Serialize.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "NSObject-Serialize.podspec"; path = "../NSObject-Serialize.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +57,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				E26EEBD71B1E12E500A117B5 /* BLSerializor */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -62,7 +69,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F5AE195388D20070C39A /* NSObject-Serialize_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +91,8 @@
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				E26EEBDB1B1E13DB00A117B5 /* BLObj.h */,
+				E26EEBDC1B1E13DB00A117B5 /* BLObj.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -117,6 +126,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E26EEBD71B1E12E500A117B5 /* BLSerializor */ = {
+			isa = PBXGroup;
+			children = (
+				E26EEBD81B1E132600A117B5 /* NSObject+Serializor.h */,
+				E26EEBD91B1E132600A117B5 /* NSObject+Serializor.m */,
+			);
+			name = BLSerializor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,7 +155,7 @@
 			);
 			name = "NSObject-Serialize_Tests";
 			productName = "NSObject-SerializeTests";
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* NSObject-Serialize_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26EEBDD1B1E13DB00A117B5 /* BLObj.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				E26EEBDA1B1E132600A117B5 /* NSObject+Serializor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

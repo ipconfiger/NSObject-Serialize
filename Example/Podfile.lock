@@ -1,0 +1,14 @@
+PODS:
+  - NSObject-Serialize (0.1.0)
+
+DEPENDENCIES:
+  - NSObject-Serialize (from `../`)
+
+EXTERNAL SOURCES:
+  NSObject-Serialize:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NSObject-Serialize: ff3051dfd957ad5ff50d2e4636c7f1294f49ab8f
+
+COCOAPODS: 0.36.4

@@ -1,0 +1,6 @@
+framework module NSObject_Serialize {
+  umbrella header "Pods-NSObject-Serialize_Tests-NSObject-Serialize-umbrella.h"
+
+  export *
+  module * { export * }
+}
